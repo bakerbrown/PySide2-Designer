@@ -5,7 +5,6 @@ import logging
 
 from PySide2.QtWidgets import QApplication, QMainWindow
 from PySide2.QtCore import Slot
-from PySide2.QtGui import QIcon
 
 # Create python source from the Ui file and resource from .qrc.
 os.system("pyside2-uic main.ui > main_ui.py")
@@ -35,6 +34,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def on_button_clicked(self):
         logging.debug("push button clicked!")
 
+        
 # ------------------------------------------------------------
 # ------------------------------------------------------------
 def main():
