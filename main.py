@@ -9,11 +9,11 @@ from PySide2.QtGui import QIcon
 
 # Create python source from the Ui file and resource from .qrc.
 os.system("pyside2-uic main.ui > main_ui.py")
-os.system("pyside2-rcc res.qrc -o res_qrc.py")
+# os.system("pyside2-rcc res.qrc -o res_qrc.py")
 
 # Import the newly updated resources.
 from ui.main_ui import Ui_MainWindow
-from ui.res_qrc import qInitResources
+# from ui.res_qrc import qInitResources
 
 # ------------------------------------------------------------
 # ------------------------------------------------------------
